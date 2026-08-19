@@ -81,7 +81,7 @@
         </div>
 
         <div class="back-row">
-            <a href="home.html" class="back-link">
+            <a href="index.html" class="back-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M15 18l-6-6 6-6"/>
                 </svg>
@@ -145,10 +145,14 @@
                 <a href="https://github.com/ronan-hwang?tab=repositories" target="_blank" rel="noopener">GitHub</a>
                 <a href="mailto:ronan.hwang@gmail.com">Email</a>
             </div>
-            <p class="footer-copy">© 2025 Ronan Hwang</p>
-        </footer>
+            <p class="footer-copy">© <span id="year"></span> Ronan Hwang</p>
+        </footer>  
     </body>
     <script>
+        // Automatically insert the current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        //Theme changes
         const root = document.documentElement;
         const toggle = document.getElementById('themeToggle');
 

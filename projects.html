@@ -105,7 +105,7 @@
                 <!-- ============ Row 1 ============ -->
                 <div class="focus-grid">
                     <article class="focus-card">
-                        <span class="kicker">August 7th 2025</span>
+                        <span class="kicker">August 7, 2025</span>
                         <h3>
                             <a href="activity_classifier_model.html" class="back-link">
                                 Ganance Activity Classifier Model
@@ -116,7 +116,7 @@
                     </article>
 
                     <article class="focus-card">
-                        <span class="kicker">March 12th 2025</span>
+                        <span class="kicker">March 12, 2025</span>
                         <h3>
                             <a href="case_comp.html" class="back-link">
                                 2025 Diamond Dollars Case Competition
@@ -127,7 +127,7 @@
                     </article>
                     
                     <article class="focus-card">
-                        <span class="kicker">February 23rd 2025</span>
+                        <span class="kicker">February 23, 2025</span>
                         <h3>
                             <a href="reds_hackathon_2025.html" class="back-link">
                                 Cincinnati Reds Case Competition
@@ -138,7 +138,7 @@
                     </article>
                     
                     <article class="focus-card">
-                        <span class="kicker">October 10th 2024</span>
+                        <span class="kicker">October 10, 2024</span>
                         <h3>
                             <a href="elly.html" class="back-link">
                                 Can De La Cruz Be Stopped From Stealing?
@@ -149,7 +149,7 @@
                     </article>
                     
                     <article class="focus-card">
-                        <span class="kicker">October 3rd 2024</span>
+                        <span class="kicker">October 3, 2024</span>
                         <h3>
                             <a href="sb_predictor.html" class="back-link">
                                 Stolen Base Predictor
@@ -160,7 +160,7 @@
                     </article>
                     
                     <article class="focus-card">
-                        <span class="kicker">June 1st 2023</span>
+                        <span class="kicker">June 1, 2023</span>
                         <h3>
                             <a href="hk_lax_2024.html" class="back-link">
                                 Zag Tours "Hong Kong Lacrosse Open 2024"
@@ -171,15 +171,14 @@
                     </article>
                     
                     <article class="focus-card">
-                        <span class="kicker">May 23rd 2023</span>
+                        <span class="kicker">May 23, 2023</span>
                         <h3>
                             <a href="backyard_baseball_trackman.html" class="back-link">
                                 Backyard Baseball Trackman Project
                             </a>
                         </h3>
                         <p>Conducted Trackman setup trials by testing mounts and distances, 
-                          documenting calibration workflow to support future baseball technology
-                          use by others.
+                          documenting calibration workflow to support...
                     </article>
                 </div>
             </section>
@@ -189,14 +188,17 @@
         <footer>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/ronanhwang" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://github.com/ronanhwang" target="_blank" rel="noopener">GitHub</a>
-                <a href="mailto:ronan.hwang@example.com">Email</a>
+                <a href="https://github.com/ronan-hwang?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:ronan.hwang@gmail.com">Email</a>
             </div>
-            <p class="footer-copy">© 2025 Ronan Hwang</p>
-        </footer>
+            <p class="footer-copy">© <span id="year"></span> Ronan Hwang</p>
+        </footer>  
     </body>
-
     <script>
+        // Automatically insert the current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Theme changes
         const root = document.documentElement;
         const toggle = document.getElementById('themeToggle');
 
