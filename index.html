@@ -101,22 +101,23 @@
                 </div>
 
                 <p class="about-text">
-                    Good ___ use time api/ event listener regarding time here! I’m a senior at Tufts University pursuing a Bachelor of 
+                    <span id="greeting"></span> I’m a senior at Tufts University pursuing a Bachelor of 
                     Science in Data Science, with minors in AI Development and Entrepreneurship, graduating in May 2027.
-                </p>
+                  </p>
                 <p class="about-text">
                     I look at data and find how to make people's lives better. This could be in sports, in 
-                    healthcare, or in___, regardless, I generate models and find something that can be 
-                    explainable to a non datascientist so that they can my research and do something beneficial 
-                    about it, whether its for themselves, the customer, etc. I am striving to be a data scientist
-                    for that one reason, the feeling of breaking through and finding really meaningful insight is what I love so much about 
-                    this degree/sector(another word).
-
-                    Ive been most proud of my work with Ganance, and ___. What makes me the most difference is the different cultures Ive been a part of
-                    Having grown up in Hong Kong with a korean background, I have been around very different cultures, not to mention going to high school in pennington NJ, 
-                    followed by now earning a college degree at Tufts. The diversiry of different people, companies 
-                    and perspectives is what makes me so unique and special and it has taught me to be open minded 
-                    and the importancce of being able to articulate my thoughts clearly to different people becuase understand things better differently
+                    healthcare, or in business, regardless, I generate models and translate them into insights that are 
+                    explainable to non‑data scientists. My goal is to ensure that anyone, whether a customer, teammate, or 
+                    decision‑maker, can act on my research to create something beneficial. I am striving to be a data scientist 
+                    for that one reason, the feeling of breaking through and uncovering meaningful insight is what I love most 
+                    about this field.
+                </p>
+                <p class="about-text">
+                    I’ve been most proud of my work with Ganance, and Tufts Baseball Analytics. What makes me different is 
+                    the range of cultures I’ve experienced. Having grown up in Hong Kong with a Korean background, attending 
+                    high school in Pennington, New Jersey, and now earning a college degree at Tufts, I’ve been shaped by diverse 
+                    communities and perspectives. This diversity has taught me to be open‑minded, and to articulate my thoughts 
+                    clearly, recognizing that people understand things differently.
                 </p>
                 <p class="about-text">
                     I've gained experience in data and engineering roles at Ganance (a smart wearable company), 
@@ -124,9 +125,9 @@
                     have been a defining part of my journey. I grew up playing soccer, competed in varsity 
                     basketball, and dedicated over a decade to baseball, including playing in Hong Kong, Korea,
                     and at the varsity level in both high school and college in the United States. My 
-                    experiences in sports sparked my interest in using data to understand performance and 
+                    experiences in sports sparked my interest in using data to understand performance, and 
                     optimize decisions, leading to a broader passion for applying machine learning and 
-                    analytics to solve meaningful real-world problems.
+                    analytics to solve meaningful real‑world problems.
                 </p>
 
                 <div class="cta-row">
@@ -211,6 +212,21 @@
         </footer>  
     </body>
     <script>
+        // Greeting
+        const greetingElement = document.getElementById("greeting");
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 12) {
+            greeting = "Good morning and welcome!";
+        } else if (hour < 18) {
+            greeting = "Good afternoon and welcome!";
+        } else {
+            greeting = "Good evening and welcome!";
+        }
+
+        greetingElement.textContent = greeting;
+
         // Automatically insert the current year
         document.getElementById("year").textContent = new Date().getFullYear();
 
