@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>Ronan Hwang</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="project.css">
+    </head>
+
+    <body>
+        <div class="marble-fixed"></div>
+
+        <div class="topbar">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ronanhwang" 
+                target="_blank" 
+                rel="noopener" 
+                aria-label="LinkedIn" 
+                class="theme-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    width="24" height="24">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/ronan-hwang?tab=repositories" 
+                target="_blank" 
+                rel="noopener" 
+                aria-label="GitHub" 
+                class="theme-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    width="24" height="24">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3
+                    m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+                    c3.14-.35 6.44-1.54 6.44-7
+                    A5.44 5.44 0 0 0 20 4.77
+                    5.07 5.07 0 0 0 19.91 1
+                    S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0
+                    C6.27.65 5.09 1 5.09 1
+                    A5.07 5.07 0 0 0 5 4.77
+                    a5.44 5.44 0 0 0-1.5 3.78
+                    c0 5.42 3.3 6.61 6.44 7
+                    a3.37 3.37 0 0 0-.94 2.61V22"/>
+                </svg>
+            </a>
+            
+            <!-- Email -->
+            <a href="mailto:ronan.hwang@gmail.com" 
+                aria-label="Email" 
+                class="theme-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                    width="24" height="24">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+            </a>
+
+            <!-- Theme toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+                <svg class="icon-sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24">
+                    <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="back-row">
+            <a href="home.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+                <span>Home</span>
+            </a>
+
+            <a href="projects.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </div>
+
+        <main>
+
+              <section class="section" id="focus">
+                <div class="section-head">
+                  <h2>Projects</h2>
+                  <span class="line"></span>
+                </div>
+                
+                <!-- ============ Row 1 ============ -->
+                <div class="focus-grid">
+                  <article class="focus-card">
+                    <span class="kicker">August 7, 2025</span>
+                    <h3>
+                      <a href="activity_classifier_model.html" class="back-link">
+                        Ganance Activity Classifier Model
+                      </a>
+                    </h3>                  
+                    <p>I developed a machine learning model that leveraged smartwatch sensor 
+                      data to classify human movements and activities...</p>
+                  </article>
+
+                  <article class="focus-card">
+                    <span class="kicker">March 12, 2025</span>
+                    <h3>
+                      <a href="case_comp.html" class="back-link">
+                        2025 Diamond Dollars Case Competition
+                      </a>
+                    </h3>
+                    <p>Competed in a case competition, analyzing relief pitcher performance and creating new 
+                      stats beyond ERA or saves...</p>
+                  </article>
+                  
+                  <article class="focus-card">
+                    <span class="kicker">February 23, 2025</span>
+                    <h3>
+                      <a href="reds_hackathon_2025.html" class="back-link">
+                        Cincinnati Reds Case Competition
+                      </a>
+                    </h3>
+                    <p>Developed roster‑agnostic model, predicting MLB player availability, estimating plate 
+                      appearances and batters faced...</p>
+                  </article>
+                  
+                  <article class="focus-card">
+                    <span class="kicker">October 10, 2024</span>
+                    <h3>
+                      <a href="elly.html" class="back-link">
+                        Can De La Cruz Be Stopped From Stealing?
+                      </a>
+                    </h3>
+                    <p>Explored preventing Elly De La Cruz steals to second by analyzing timing variables such as 
+                      pitch, sprint speed... </p>
+                  </article>
+                  
+                  <article class="focus-card">
+                    <span class="kicker">October 3, 2024</span>
+                    <h3>
+                      <a href="sb_predictor.html" class="back-link">
+                        Stolen Base Predictor
+                      </a>
+                    </h3>
+                    <p>Developed program using 2024 Statcast data to predict stolen bases, incorporating 
+                      runner jump, pitch velocity, and catcher performance...</p>
+                  </article>
+                  
+                  <article class="focus-card">
+                    <span class="kicker">June 1, 2023</span>
+                    <h3>
+                      <a href="hk_lax_2024.html" class="back-link">
+                        Zag Tours "Hong Kong Lacrosse Open 2024"
+                      </a>
+                    </h3>
+                    <p>I developed a comprehensive 10‑day itinerary for Princeton’s Women’s 
+                      Lacrosse team to participate in the Hong Kong...
+                  </article>
+                </div>
+              </section>
+        </main>
+        
+        <!-- ============ FOOTER ============ -->
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/ronanhwang" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/ronanhwang" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:ronan.hwang@example.com">Email</a>
+            </div>
+            <p class="footer-copy">© 2025 Ronan Hwang</p>
+        </footer>
+    </body>
+
+    <script>
+        const root = document.documentElement;
+        const toggle = document.getElementById('themeToggle');
+
+        toggle.addEventListener('click', () => {
+          const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+        });
+
+        const reveal = document.querySelectorAll('.card, .focus-card');
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting){
+              setTimeout(() => entry.target.classList.add('in-view'), i * 90);
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+
+        reveal.forEach(c => io.observe(c));
+    </script>
+</html>
