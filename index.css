@@ -504,7 +504,7 @@ h3 a.back-link:hover {
   border-bottom: 1px solid var(--panel-border);
 }
 
-.project-kicker{
+.project-date{
   font-family: var(--sans);
   font-size: 0.72rem;
   letter-spacing: 0.3em;
@@ -531,7 +531,7 @@ h3 a.back-link:hover {
   animation: rise var(--dur) var(--ease) 220ms forwards;
 }
 
-.project-date{
+.project-kicker{
   font-family: var(--sans);
   font-size: 0.86rem;
   color: var(--text-dim);
