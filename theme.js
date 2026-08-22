@@ -16,3 +16,22 @@ if (toggle) {
         localStorage.setItem('theme', next);
     });
 }
+
+// Animation delay every time you scroll through focus cards
+const reveal = document.querySelectorAll('.card, .focus-card');
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+
+    if (entry.isIntersecting) {
+      // Add staggered animation
+      setTimeout(() => entry.target.classList.add('in-view'), i * 90);
+    } else {
+      // Remove class so animation can replay
+      entry.target.classList.remove('in-view');
+    }
+
+  });
+}, { threshold: 0.2 });
+
+reveal.forEach(c => io.observe(c));

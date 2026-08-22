@@ -255,17 +255,5 @@
           const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
           root.setAttribute('data-theme', next);
         });
-
-        const reveal = document.querySelectorAll('.card, .focus-card');
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach((entry, i) => {
-            if (entry.isIntersecting){
-              setTimeout(() => entry.target.classList.add('in-view'), i * 90);
-              io.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.2 });
-
-        reveal.forEach(c => io.observe(c));
     </script>
 </html>
