@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="../../index.css">
         <link rel="stylesheet" href="../../project.css">
+        <script src="../../theme.js" defer></script>
     </head>
 
     <body>
@@ -152,17 +153,4 @@
             <p class="footer-copy">© <span id="year"></span> Ronan Hwang</p>
         </footer>  
     </body>
-    <script>
-        // Automatically insert the current year
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        //Theme changes
-        const root = document.documentElement;
-        const toggle = document.getElementById('themeToggle');
-
-        toggle.addEventListener('click', () => {
-          const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-        });
-    </script>
 </html>
