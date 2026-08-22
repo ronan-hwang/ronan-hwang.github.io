@@ -20,21 +20,23 @@ if (toggle) {
 // Animation delay every time you scroll through focus cards
 const reveal = document.querySelectorAll('.card, .focus-card');
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+if (reveal.length > 0) {
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
 
-    if (entry.isIntersecting) {
-      // Add staggered animation
-      setTimeout(() => entry.target.classList.add('in-view'), i * 90);
-    } else {
-      // Remove class so animation can replay
-      entry.target.classList.remove('in-view');
-    }
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            } else {
+                entry.target.classList.remove('in-view');
+            }
 
-  });
-}, { threshold: 0.2 });
+        });
+    }, {
+        threshold: 0.2
+    });
 
-reveal.forEach(c => io.observe(c));
+    reveal.forEach((card) => io.observe(card));
+}
 
 
 //  Footer - Automatically insert the current year
