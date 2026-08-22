@@ -17,19 +17,18 @@ if (toggle) {
     });
 }
 
-// Animation delay every time you scroll through focus cards
+
+// Card reveal animation
 const reveal = document.querySelectorAll('.card, .focus-card');
 
 if (reveal.length > 0) {
     const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-
             if (entry.isIntersecting) {
                 entry.target.classList.add('in-view');
             } else {
                 entry.target.classList.remove('in-view');
             }
-
         });
     }, {
         threshold: 0.2
@@ -37,7 +36,6 @@ if (reveal.length > 0) {
 
     reveal.forEach((card) => io.observe(card));
 }
-
 
 //  Footer - Automatically insert the current year
 document.getElementById("year").textContent = new Date().getFullYear();
