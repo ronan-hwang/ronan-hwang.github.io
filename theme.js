@@ -35,3 +35,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 reveal.forEach(c => io.observe(c));
+
+
+//  Footer - Automatically insert the current year
+document.getElementById("year").textContent = new Date().getFullYear();
