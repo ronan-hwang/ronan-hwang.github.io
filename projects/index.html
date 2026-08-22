@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="../index.css">
-        <script src="../theme.js" defer></script>
+        <script src="theme.js" defer></script>
     </head>
 
     <body>
@@ -243,17 +243,4 @@
             <p class="footer-copy">© <span id="year"></span> Ronan Hwang</p>
         </footer>  
     </body>
-    <script>
-        // Automatically insert the current year
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        // Theme changes
-        const root = document.documentElement;
-        const toggle = document.getElementById('themeToggle');
-
-        toggle.addEventListener('click', () => {
-          const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', next);
-        });
-    </script>
 </html>
