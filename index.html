@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="index.css">
+        <script src="theme.js"></script>
     </head>
 
     <body>
@@ -229,15 +230,6 @@
 
         // Automatically insert the current year
         document.getElementById("year").textContent = new Date().getFullYear();
-
-        //Theme changes
-        const root = document.documentElement;
-        const toggle = document.getElementById('themeToggle');
-
-        toggle.addEventListener('click', () => {
-        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        });
 
         const reveal = document.querySelectorAll('.card, .focus-card');
         const io = new IntersectionObserver((entries) => {
