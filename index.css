@@ -548,13 +548,25 @@ h3 a.back-link:hover {
 
 .project-body p{
   font-family: var(--sans);
-  font-size: 1.02rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
   color: var(--text-dim);
-  margin: 0 0 1.6rem;
+  max-width: 62ch;
+  margin: 0 0 2rem;
+}
+
+.project-body p:first-of-type{
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  max-width: 58ch;
 }
 
 .project-body p:last-of-type{ margin-bottom: 0; }
+
 
 .project-cta{
   max-width: 760px;
