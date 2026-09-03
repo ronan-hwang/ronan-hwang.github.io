@@ -15,7 +15,7 @@ html[data-theme="dark"]{
   --bg-image: var(--dark-bg-image);
   --overlay: rgba(8,8,10,0.58);
   --text: #EDEAE3;
-  --text-dim: #A69F94;
+  --text-dim: #B0A99F;
   --accent: #C9A66B;
   --accent-soft: rgba(201,166,107,0.35);
   --panel: rgba(255,255,255,0.045);
@@ -296,7 +296,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .focus-card p{
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 0.9rem;
   line-height: 1.65;
   color: var(--text-dim);
@@ -376,7 +376,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .card p{
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 0.92rem;
   line-height: 1.65;
   color: var(--text-dim);
@@ -547,7 +547,7 @@ h3 a.back-link:hover {
 }
 
 .project-body p{
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 1.02rem;
   line-height: 1.8;
   color: var(--text-dim);
