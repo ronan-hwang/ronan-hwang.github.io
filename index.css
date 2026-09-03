@@ -531,7 +531,7 @@ h3 a.back-link:hover {
 }
 
 .project-kicker{
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 0.86rem;
   color: var(--text-dim);
   margin: 0;
