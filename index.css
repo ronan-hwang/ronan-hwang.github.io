@@ -164,7 +164,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 @keyframes grow{ to{ width: 140px; } }
 
 .tagline{
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-weight: 400;
   font-size: 1rem;
   color: var(--text-dim);
@@ -214,7 +214,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 
 /* ---------- About ---------- */
 .about-text{
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.15rem;
   line-height: 1.75;
   color: var(--text-dim);
@@ -299,7 +299,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .focus-card p{
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.05rem;
   line-height: 1.65;
   color: var(--text-dim);
@@ -379,7 +379,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .card p{
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.05rem;
   line-height: 1.65;
   color: var(--text-dim);
@@ -550,7 +550,7 @@ h3 a.back-link:hover {
 }
 
 .project-body p{
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.15rem;
   line-height: 1.8;
   color: var(--text-dim);
