@@ -1,3 +1,4 @@
+
 /* ---------- Background ---------- */
 :root{
   --dark-bg-image: url('dark_marble.jpeg');
@@ -50,18 +51,6 @@ body {
   background: transparent;
   transition: color var(--dur) var(--ease);
 }
-
-/* Base paragraph style — every <p> inherits this unless overridden below */
-p{
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 400;
-  line-height: 1.75;
-  color: var(--text-dim);
-  margin: 0 0 1rem;
-}
-
-
 
 .marble-fixed{
   position: fixed;
@@ -175,8 +164,9 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 @keyframes grow{ to{ width: 140px; } }
 
 .tagline{
-  font-size: 1rem;
+  font-family: var(--sans);
   font-weight: 400;
+  font-size: 1rem;
   color: var(--text-dim);
   max-width: 34ch;
   margin: 0 0 2.6rem;
@@ -224,13 +214,12 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 
 /* ---------- About ---------- */
 .about-text{
+  font-family: var(--sans);
   font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-dim);
   max-width: 100ch;
   margin: 0 0 1.3rem;
-}
-
-.about-text::first-line{
-  letter-spacing: 0.012em;
 }
 
 .cta-row{
@@ -307,8 +296,10 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .focus-card p{
+  font-family: var(--sans);
   font-size: 0.9rem;
   line-height: 1.65;
+  color: var(--text-dim);
   margin: 0;
 }
 
@@ -385,8 +376,10 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 }
 
 .card p{
+  font-family: var(--sans);
   font-size: 0.92rem;
   line-height: 1.65;
+  color: var(--text-dim);
   margin: 0 0 1.3rem;
 }
 
@@ -539,6 +532,7 @@ h3 a.back-link:hover {
 }
 
 .project-kicker{
+  font-family: var(--sans);
   font-size: 0.86rem;
   color: var(--text-dim);
   margin: 0;
@@ -553,24 +547,14 @@ h3 a.back-link:hover {
 }
 
 .project-body p{
-  font-size: 1rem;
-  line-height: 1.9;
-  letter-spacing: 0.01em;
-  max-width: 62ch;
-  margin: 0 0 2rem;
-}
-
-.project-body p:first-of-type{
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  line-height: 1.65;
-  letter-spacing: 0.01em;
-  color: var(--text);
-  max-width: 58ch;
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--text-dim);
+  margin: 0 0 1.6rem;
 }
 
 .project-body p:last-of-type{ margin-bottom: 0; }
-
 
 .project-cta{
   max-width: 760px;
