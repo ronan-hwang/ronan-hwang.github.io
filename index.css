@@ -266,15 +266,13 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
   gap: 1.4rem;
 }
 
-.focus-card{
-  background: var(--panel);
-  border: 1px solid var(--panel-border);
-  border-radius: 4px;
-  padding: 2rem 1.8rem;
-  backdrop-filter: blur(14px);
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 700ms var(--ease), transform 700ms var(--ease), border-color 300ms var(--ease);
+.focus-card p{
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--text-dim);
+  margin: 0;
 }
 
 .focus-card.in-view{ opacity: 1; transform: translateY(0); }
@@ -378,6 +376,7 @@ html[data-theme="light"] .icon-moon{ opacity: 0; transform: rotate(90deg) scale(
 .card p{
   font-family: var(--serif);
   font-size: 0.92rem;
+  font-weight: 500;
   line-height: 1.65;
   color: var(--text-dim);
   margin: 0 0 1.3rem;
@@ -549,6 +548,7 @@ h3 a.back-link:hover {
 .project-body p{
   font-family: var(--serif);
   font-size: 1.02rem;
+  font-weight: 500;
   line-height: 1.8;
   color: var(--text-dim);
   margin: 0 0 1.6rem;
