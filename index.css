@@ -15,7 +15,7 @@ html[data-theme="dark"]{
   --bg-image: var(--dark-bg-image);
   --overlay: rgba(8,8,10,0.58);
   --text: #EDEAE3;
-  --text-dim: #B0A99F;
+  --text-dim: #B8B1A7;
   --accent: #C9A66B;
   --accent-soft: rgba(201,166,107,0.35);
   --panel: rgba(255,255,255,0.045);
